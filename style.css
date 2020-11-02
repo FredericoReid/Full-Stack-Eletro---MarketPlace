@@ -69,10 +69,6 @@
     cursor: zoom-in;
 }
 
-.produtos img{
-	height: 100px;
-	width: 75px;
-}
 
 .preco_ant {
     text-decoration: line-through;
