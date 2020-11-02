@@ -1,7 +1,7 @@
 .menu1 ul li{
 	background-color: black;
 	float: left;
-	width: 138px;
+	width: 135px;
 	height: 30px;
 	display: inline-block;
 	text-align: center;
@@ -29,7 +29,7 @@
 }
 
 .menu1 ul ul ul{
-	margin-left: 152px;
+	margin-left: 147px;
 	top: 0px;
 	position: absolute;
 }
@@ -49,16 +49,40 @@
 	font-style: initial;
 }
 
+.menu1 ul ul ul li{
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-style: initial;
+}
 
-.container{
-	overflow:hidden;
+
+.cat_produtos {
+    margin-left: 2%;
 }
-  
-.container img{
-	transition: all 0.2s;
+
+.produtos {
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    cursor: zoom-in;
 }
-.container:hover img{
-	transform: rotate(2deg) scale(1.2);
+
+.produtos img{
+	height: 100px;
+	width: 75px;
+}
+
+.preco_ant {
+    text-decoration: line-through;
+    font-size: 15px;
+}
+
+.preco_final {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .input-class {
