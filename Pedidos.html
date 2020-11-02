@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastre-se</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./cadastro.css">
+</head>
+<body>
+    <main>
+        <div class="card">
+            <form action="cadastro_usuario.php" method="post">
+                <h1>Pedidos</h1>
+
+                <label for="">Selecione seu Produto:</label>
+                <select id="estado">
+                    <option value="FOGAO">Fogão 4 bocas</option>
+                    <option value="FOGAO">Fogão ATLAS</option>
+                    <option value="AP">Microondas Eletrolux</option>
+                    <option value="AM">Microondas Philco</option>
+                    <option value="BA">Microondas Consul</option>
+                    <option value="CE">Geladeira Brastemp</option>
+                    <option value="DF">Geladeira três portas</option>
+                    <option value="ES">Geladeira Dodge</option>
+                    <option value="GO">Maquina de Lavar Eletrolux</option>
+                    <option value="MA">Maquina de Lavar Philco</option>
+                    <option value="MT">Lavadora de Pratos Torpente</option>
+                    <option value="MS">Lavadora de Pratos Electrolux</option>
+                </select>
+                <script>
+                    $(document).ready(function() {
+                        $('#estado').select2();
+                    });
+                </script>
+                <br>
+
+                <label for="">Selecione a quantidade:</label>
+                <select id="estado">
+                    <option value="FOGAO">1</option>
+                    <option value="FOGAO">2</option>
+                    <option value="AP">3</option>
+                    <option value="AM">4</option>
+                    <option value="BA">5</option>
+                    <option value="CE">6</option>
+                    <option value="DF">7</option>
+                    <option value="ES">8</option>
+                    <option value="GO">9</option>
+                    <option value="MA">10</option>
+                </select>
+                
+
+
+                <input type="email" name="email" placeholder="Digite o seu e-mail para contato">
+                <input type="password" name="endereco" placeholder="Digite seu endereço para entrega">
+                <input type="password" name="complemento" placeholder="Complemento (opcional)">
+                <button type="submit"><b>Enviar Pedido</b></button>           
+            </form>
+        </div>
+    </main>
+</body>
+</html>
