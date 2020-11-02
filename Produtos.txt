@@ -8,6 +8,6 @@ Geladeira três portas
 Geladeira Dodge
 Maquina de Lavar Eletrolux
 Maquina de Lavar Philco
-Lavadora de Pratos Torpente
-Lavadora de Pratos Electrolux
+Lava-louça Torpente
+Lava-louça Electrolux
 
