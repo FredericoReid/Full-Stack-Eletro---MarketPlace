@@ -7,7 +7,7 @@
     <center>
       <table style="width:100%">
         <tr>
-          <th><img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.03 (1).jpeg" width="300" height="60"></th>
+          <th><img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.03 (1).jpeg" width="299" height="60"></th>
           <th> <img src="./imagens/superpromocao.gif" width="960" height="60"> </th>
         </tr>
       </table>
@@ -38,11 +38,11 @@
               <li><a href="#">Celulares</a></li>
               <li><a href="#">Eletrodomesticos</a>
                 <ul>
-                  <li><a href="#">Fogões</a></li>
-                  <li><a href="#">Microondas</a></li>
-                  <li><a href="#">Geladeiras</a></li>
-                  <li><a href="#">Máquinas de Lavar</a></li>
-                  <li><a href="#">Lava - louças</a></li>
+                  <li onclick="exibirCateg('fogao')">Fogões</li>
+                  <li onclick="exibirCateg('microondas')">Microondas</li>
+                  <li onclick="exibirCateg('geladeira')">Geladeiras</li>
+                  <li onclick="exibirCateg('maquina de lavar')">Máquinas de Lavar</li>
+                  <li onclick="exibirCateg('lava - loucas')">Lava - louças</li>
                 </ul>
               </li>
               <li><a href="#">Vestíveis</a></li>
@@ -60,7 +60,7 @@
               <li><a href="#">Vila Guilherme</a></li>
             </ul>
           </li>
-          <li><a href="#">Revenda!</a></li>
+          <li><a href="#">Peça!</a></li>
           <li><form><input type="text" class="input-class" placeholder="Procure aqui" id="Procurainicial"></form></li>
           <li><button onclick="Procura()">Procurar</button></li>
       
@@ -73,106 +73,151 @@
 
 <body>
     
-<!-- --------------------------Primeira Tabela de Produtos-------------------------------------------- -->
-    <div class = "container">
-      <table style="width:100%">
-        <tr>
-          <th><img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.02 (1).jpeg" alt="Fogão 4 bocas" style="width:100px;" onmouseover="destaque(this)" onmouseout="destaque(this)"></th>
-          <th><img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.02 (2).jpeg" alt="Microondas Electrolux" style="width:100px;"></th>
-          <th><img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.02.jpeg" alt="Fogão ATLAS" style="width:100px;"></th>
-          <th><img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.03 (2).jpeg" alt="Geladeira Brastemp" style="width:100px;"></th>
-          <th><img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.03.jpeg" alt="Geladeira Brastemp Duas Portas" style="width:100px;"></th>
-          <th><img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.04 (1).jpeg" alt="Geladeria Dodge" style="width:40px;"></th>
-          <th><img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.04 (2).jpeg" alt="Máquina de Lavar" style="width:100px;"></th>
-          
+  <br>
+  <br>
+  <br>
+  <br>
 
-        </tr>
-        
-        <tr>
-          <td>Fogão 4 bocas</td>
-          <td>Microondas Electrolux</td>
-          <td>Fogão ATLAS</td>
-          <td>Geladeira Brastemp</td>
-          <td>Geladeira três portas</td>
-          <td>Geladeira Dodge</td>
-          <td>Máquina de Lavar</td>
 
-        </tr>
-        <tr>
-          <td>R$679,80</td>
-          <td>R$299,99</td>
-          <td>R$599,90</td>
-          <td>R$899,90</td>
-          <td>R$1500,00</td>
-          <td>R$999,90</td>
-          <td>R$899,90</td>
-        </tr>
-
-        <tr>
-          <td><a href = "COMPRAR.html" style="background-color:rgb(20, 235, 20);">COMPRAR!</td>
-          <td><a href = "COMPRAR.html" style="background-color:rgb(20, 235, 20);">COMPRAR!</td>
-          <td><a href = "COMPRAR.html" style="background-color:rgb(20, 235, 20);">COMPRAR!</td>
-          <td><a href = "COMPRAR.html" style="background-color:rgb(20, 235, 20);">COMPRAR!</td>
-          <td><a href = "COMPRAR.html" style="background-color:rgb(20, 235, 20);">COMPRAR!</td>
-          <td><a href = "COMPRAR.html" style="background-color:rgb(20, 235, 20);">COMPRAR!</td>
-          <td><a href = "COMPRAR.html" style="background-color:rgb(20, 235, 20);">COMPRAR!</td>
-
-        </tr>
-      </table>
+<!-- Começo dos produtos -->
+  
+  <div class="cat_produtos">
+    <div class="produtos" id="geladeira">
+        <img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.03 (2).jpeg" width="140px" onmouseover="destaque(this)"
+            onmouseout="destaque(this)">
+        <br>
+        <p>Geladeira Brastemp</p>
+        <div>
+            <hr>
+            <p class="preco_ant">R$ 6.389,00</p>
+            <p class="preco_final">R$ 5.019,00</p>
+        </div>
     </div>
+    <div class="produtos" id="geladeira">
+        <img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.03.jpeg" width="140px" onmouseover="destaque(this)"
+            onmouseout="destaque(this)">
+        <br>
+        <p>Geladeira tres portas</p>
+        <div>
+            <hr>
+            <p class="preco_ant">R$ 2.068,60</p>
+            <p class="preco_final">R$ 1.910,90</p><br>
+        </div>
+    </div>
+    <div class="produtos" id="geladeira">
+        <img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.04 (1).jpeg" width="140px" onmouseover="destaque(this)"
+            onmouseout="destaque(this)">
+        <br>
+        <p>Geladeira Frost Free Consul Prata 340 Litros</p>
+        <div>
+            <hr>
+            <p class="preco_ant">R$ 2.199,99</p>
+            <p class="preco_final">R$ 2.069,00</p><br>
+        </div>
+    </div>
+    <div class="produtos" id="fogao">
+        <img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.02 (1).jpeg" width="140px" onmouseover="destaque(this)"
+            onmouseout="destaque(this)">
+        <br>
+        <p>Fogão 4 Bocas Consul Inox com Mesa de Vidro</p>
+        <div>
+            <hr>
+            <p class="preco_ant">R$ 1.299,99</p>
+            <p class="preco_final">R$ 1.129,00</p><br>
+        </div>
+    </div>
+    <div class="produtos" id="fogao">
+        <img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.02.jpeg" width="140px" onmouseover="destaque(this)"
+            onmouseout="destaque(this)">
+        <br>
+        <p>Fogão 4 Bocas Atlas Monaco com Acendimento Automático</p>
+        <div>
+            <hr>
+            <p class="preco_ant">R$ 699,99</p>
+            <p class="preco_final">R$ 519,70</p><br>
+        </div>
+    </div>
+    <div class="produtos" id="microondas">
+        <img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.02 (2).jpeg" width="140px" onmouseover="destaque(this)"
+            onmouseout="destaque(this)">
+        <br>
+        <p>Micro-ondas Consul Prateado 32L Inox 220v</p>
+        <div>
+            <hr>
+            <p class="preco_ant">R$ 589,99</p>
+            <p class="preco_final">R$ 409,88</p><br>
+        </div>
+    </div>
+    <div class="produtos" id="microondas">
+        <img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.04 (3).jpeg" width="140px" onmouseover="destaque(this)"
+            onmouseout="destaque(this)">
+        <br>
+        <p>Micro-ondas Philco Inox 25L Espelhado 220v</p>
+        <div>
+            <hr>
+            <p class="preco_ant">R$ 508,70</p>
+            <p class="preco_final">R$ 464,00</p><br>
+        </div>
+    </div>
+    <div class="produtos" id="microondas">
+        <img src="./imagens_fullstack/microondas_eletrolux.jpg" width="140px" onmouseover="destaque(this)"
+            onmouseout="destaque(this)">
+        <br>
+        <p>Micro-ondas Eletrolux 20L Branco 127v</p>
+        <div>
+            <hr>
+            <p class="preco_ant">R$ 459,99</p>
+            <p class="preco_final">R$ 436,05</p><br>
+        </div>
+    </div>
+    <div class="produtos" id="lavaloucas">
+        <img src="./imagens_fullstack/lavalouca_eletrolux.jpg" width="140px" onmouseover="destaque(this)"
+            onmouseout="destaque(this)">
+        <br>
+        <p>Lava-Louça Eletrolux Inox com Painel Blue Touch</p>
+        <div>
+            <hr>
+            <p class="preco_ant">R$ 3599,00</p>
+            <p class="preco_final">R$ 2.799,00</p><br>
+        </div>
+    </div>
+    <div class="produtos" id="lavaloucas">
+        <img src="./imagens_fullstack/lavalouca_brastemp.jpg" width="140px" onmouseover="destaque(this)"
+            onmouseout="destaque(this)">
+        <br>
+        <p>Lava-Louça Brastemp Compacta Branca 127V</p>
+        <div>
+            <hr>
+            <p class="preco_ant">R$ 1.970,59</p>
+            <p class="preco_final">R$ 1.730,61</p><br>
+        </div>
+    </div>
+    <div class="produtos" id="lavaroupas">
+        <img src="./imagens_fullstack/lavadora_brastemp.jpg" width="140px" onmouseover="destaque(this)"
+            onmouseout="destaque(this)">
+        <br>
+        <p>Máquina de Lavar Brastemp 11Kg Turbo Perfomance</p>
+        <div>
+            <hr>
+            <p class="preco_ant">R$ 1.699,00</p>
+            <p class="preco_final">R$ 1.214,10</p><br>
+        </div>
+    </div>
+    <div class="produtos" id="lavaroupas">
+        <img src="./imagens_fullstack/lavadora_philco.jpg" width="140px" onmouseover="destaque(this)"
+            onmouseout="destaque(this)">
+        <br>
+        <p>Máquina de Lavar Philco Lava&Seca 12Kg </p>
+        <div>
+            <hr>
+            <p class="preco_ant">R$ 2.399,00</p>
+            <p class="preco_final">R$ 2.179,90</p><br>
+        </div>
+    </div>
+</div>
 
-<!-- ---------------------------Segunda Tabela de Produtos-------------------------------------- -->
-
-<br>
-<br>
-<br>
-    <div class="container">
-      <table style="width:100%">
-        <tr>
-          <th><img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.04 (3).jpeg" alt="Microondas Philco" style="width:100px;"></th>
-          <th><img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.04.jpeg" alt="Lavadora de Pratos" style="width:100px;"></th>
-          <th><img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.05 (1).jpeg" alt="Lavadora de pratos electrolux" style="width:100px;"></th>
-          <th><img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.05.jpeg" alt="Máquina de lavar Philco" style="width:100px;"></th>
-          <th><img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.06.jpeg" alt="Microondas Consul" style="width:100px;"></th>
-          <th><img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.04 (1).jpeg" alt="Geladeria Dodge" style="width:40px;"></th>
-          <th><img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.04 (2).jpeg" alt="Máquina de Lavar" style="width:100px;"></th>
 
 
-
-
-        </tr>
-        <tr>
-          <td>Microondas Philco</td>
-          <td>Lavadora de Pratos</td>
-          <td>Lavadora de Pratos Elec.</td>
-          <td>Máquina de Lavar Philco</td>
-          <td>Microondas Philco</td>
-          <td>Geladeira Dodge</td>
-          <td>Máquina de Lavar</td>
-
-        </tr>
-        <tr>
-          <td>R$490,00</td>
-          <td>R$599,90</td>
-          <td>R$599,90</td>
-          <td>R$699,99</td>
-          <td>R$1500,00</td>
-          <td>R$999,90</td>
-          <td>R$899,90</td>
-        </tr>
-
-        <tr>
-          <td><a href = "COMPRAR.html" style="background-color:rgb(20, 235, 20);">COMPRAR!</td>
-          <td><a href = "COMPRAR.html" style="background-color:rgb(20, 235, 20);">COMPRAR!</td>
-          <td><a href = "COMPRAR.html" style="background-color:rgb(20, 235, 20);">COMPRAR!</td>
-          <td><a href = "COMPRAR.html" style="background-color:rgb(20, 235, 20);">COMPRAR!</td>
-          <td><a href = "COMPRAR.html" style="background-color:rgb(20, 235, 20);">COMPRAR!</td>
-          <td><a href = "COMPRAR.html" style="background-color:rgb(20, 235, 20);">COMPRAR!</td>
-          <td><a href = "COMPRAR.html" style="background-color:rgb(20, 235, 20);">COMPRAR!</td>
-
-        </tr>
-      </table>
-      </div>
 <!-- ----------------------------Término das Tabelas de Produtos e Inicio do Rodapé-------------------------------------- -->
 <br>
 <br>
