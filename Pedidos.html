@@ -11,24 +11,32 @@
 <body>
     <main>
         <div class="card">
-            <form action="cadastro_usuario.php" method="post">
+            <form action="./PHP/pedidos.php" method="post">
                 <h1>Pedidos</h1>
 
+                <input type="nome_cliente" name="nome_cliente" placeholder="Digite o seu Nome completo">
+                <input type="endereco" name="endereco" placeholder="Digite seu endereço para entrega">
+                <input type="telefone" name="telefone" placeholder="Digite seu telefone para contato">
+                <br>
+                
+                <div class = "opcoes_produtos">
                 <label for="">Selecione seu Produto:</label>
-                <select id="estado">
-                    <option value="FOGAO">Fogão 4 bocas</option>
-                    <option value="FOGAO">Fogão ATLAS</option>
-                    <option value="MICROONDAS">Microondas Eletrolux</option>
-                    <option value="MICROONDAS">Microondas Philco</option>
-                    <option value="MICROONDAS">Microondas Consul</option>
-                    <option value="GELADEIRA">Geladeira Brastemp</option>
-                    <option value="GELADEIRA">Geladeira três portas</option>
-                    <option value="GELADEIRA">Geladeira Dodge</option>
-                    <option value="LAVAROUPAS">Maquina de Lavar Eletrolux</option>
-                    <option value="LAVAROUPAS">Maquina de Lavar Philco</option>
-                    <option value="LAVALOUCAS">Lavadora de Pratos Torpente</option>
-                    <option value="LAVALOUCAS">Lavadora de Pratos Electrolux</option>
+                <select id="produto">
+                    <option value="FOGAO1">Fogão 4 bocas</option>
+                    <option value="FOGAO2">Fogão ATLAS</option>
+                    <option value="MICROONDAS1">Microondas Eletrolux</option>
+                    <option value="MICROONDAS2">Microondas Philco</option>
+                    <option value="MICROONDAS3">Microondas Consul</option>
+                    <option value="GELADEIRA1">Geladeira Brastemp</option>
+                    <option value="GELADEIRA2">Geladeira três portas</option>
+                    <option value="GELADEIRA3">Geladeira Dodge</option>
+                    <option value="LAVAROUPAS1">Maquina de Lavar Eletrolux</option>
+                    <option value="LAVAROUPAS2">Maquina de Lavar Philco</option>
+                    <option value="LAVALOUCAS1">Lavadora de Pratos Torpente</option>
+                    <option value="LAVALOUCAS2">Lavadora de Pratos Electrolux</option>
                 </select>
+                </div>
+
                 <script>
                     $(document).ready(function() {
                         $('#estado').select2();
@@ -36,25 +44,23 @@
                 </script>
                 <br>
 
-                <label for="">Selecione a quantidade:</label>
-                <select id="estado">
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                    <option value="">5</option>
-                    <option value="">6</option>
-                    <option value="">7</option>
-                    <option value="">8</option>
-                    <option value="">9</option>
-                    <option value="">10</option>
-                </select>
                 
-
-
-                <input type="email" name="email" placeholder="Digite o seu e-mail para contato">
-                <input type="password" name="endereco" placeholder="Digite seu endereço para entrega">
-                <input type="password" name="complemento" placeholder="Complemento (opcional)">
+                <div class = "quantidade_produtos"> 
+                <label for="">Selecione a quantidade:</label>
+                <select id="quantidade">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                </div>
+                
                 <button type="submit"><b>Enviar Pedido</b></button>           
             </form>
         </div>
