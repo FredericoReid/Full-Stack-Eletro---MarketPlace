@@ -6,17 +6,23 @@ include('conexao.php');
 
 
 //Verificamos se o usuário digitou algo no cmapo email e senha. Caso negativo, retornamos ele para a página de login
-if(empty($_POST['email']) || empty($_POST['senha'])){
-    header('Location: login.html');
+if(empty($_POST['nome_cliente']) || empty($_POST['endereco']) || empty($_POST['telefone']) || empty($_POST['produto']) || empty($_POST['valor_unitario']) || empty($_POST['quantidade']) || empty($_POST['valor_total'])){
+    header('Location: Pedidos.html');
     exit();
 }
 
 //pegamos os dados digitados pelo usuário
-$email = mysqli_real_escape_string($conexao, $_POST['email']);
-$senha = mysqli_real_escape_string($conexao, $_POST['senha']);
+$nome_cliente = mysqli_real_escape_string($conexao, $_POST['nome_cliente']);
+$endereco = mysqli_real_escape_string($conexao, $_POST['endereco']);
+$telefone = mysqli_real_escape_string($conexao, $_POST['telefone']);
+$produto = mysqli_real_escape_string($conexao, $_POST['produto']);
+$valor_unitario = mysqli_real_escape_string($conexao, $_POST['valor_unitario']);
+$quantidade = mysqli_real_escape_string($conexao, $_POST['quantidade']);
+$valor_total = $valor_unitario * $quantidade;
 
 //Verificamos em nosso banco de dados se as informações cooincidem
-$query = "select usuario_id, usuario from usuario where usuario = '{$email}' and senha = '{$senha}";
+$query = "insert into pedidos
+values ('nome_cliente', 'endereco', 'telefone', 'produto', valor_unitario, quantidade, valor_total);";
 
 $result = mysqli_query($conexao, $query);
 
@@ -28,7 +34,7 @@ if ($row == 1){
     exit();
 }
 else{
-    header('Location: login.html');
+    header('Location: pedidos.html');
     exit();
 }
 
