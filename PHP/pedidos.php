@@ -16,7 +16,16 @@ $nome_cliente = mysqli_real_escape_string($conexao, $_POST['nome_cliente']);
 $endereco = mysqli_real_escape_string($conexao, $_POST['endereco']);
 $telefone = mysqli_real_escape_string($conexao, $_POST['telefone']);
 $produto = mysqli_real_escape_string($conexao, $_POST['produto']);
-$valor_unitario = mysqli_real_escape_string($conexao, $_POST['valor_unitario']);
+
+
+$produto = $_POST['produto'];
+
+if($produto == )
+
+$valor_unitario = mysqli_real_escape_string($conexao, $_POST['produto']);
+
+
+
 $quantidade = mysqli_real_escape_string($conexao, $_POST['quantidade']);
 $valor_total = $valor_unitario * $quantidade;
 
