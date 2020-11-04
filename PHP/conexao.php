@@ -1,7 +1,7 @@
 <?php
 
 //Aqui definimos os parametros para a conexao com o banco de dados
-define('Hostname', 'localhost:10080');
+define('Hostname', 'localhost:8080');
 define('Username', 'root');
 define('Password', 'Usuarioroot@!372');
 define('DB', 'pedidos');
