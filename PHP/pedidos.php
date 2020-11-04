@@ -20,10 +20,53 @@ $produto = mysqli_real_escape_string($conexao, $_POST['produto']);
 
 $produto = $_POST['produto'];
 
-if($produto == )
+if($produto == "FOGAO1"){
+    $valor_unitario = 1129;
+}
 
-$valor_unitario = mysqli_real_escape_string($conexao, $_POST['produto']);
+elseif ($produto == "FOGAO2"){
+    $valor_unitario = 1129;
+}
 
+elseif ($produto == "MICROONDAS1"){
+    $valor_unitario = 409.88;
+}
+
+elseif ($produto == "MICROONDAS2"){
+    $valor_unitario = 464.00;
+}
+
+elseif ($produto == "MICROONDAS3"){
+    $valor_unitario = 436.05;
+}
+
+elseif ($produto == "GELADEIRA1"){
+    $valor_unitario = 5019;
+}
+
+elseif ($produto == "GELADEIRA2"){
+    $valor_unitario = 1910.90;
+}
+
+elseif ($produto == "GELADEIRA3"){
+    $valor_unitario = 2069;
+}
+
+elseif ($produto == "LAVAROUPAS1"){
+    $valor_unitario = 1214.10;
+}
+
+elseif ($produto == "LAVAROUPAS2"){
+    $valor_unitario = 2179.90;
+}
+
+elseif ($produto == "LAVALOUCAS1"){
+    $valor_unitario = 2799;
+}
+
+elseif ($produto == "LAVALOUCAS2"){
+    $valor_unitario = 1730.61;
+}
 
 
 $quantidade = mysqli_real_escape_string($conexao, $_POST['quantidade']);
@@ -46,6 +89,5 @@ else{
     header('Location: pedidos.html');
     exit();
 }
-
 
 ?>
