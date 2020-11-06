@@ -60,7 +60,13 @@
               <li><a href="#">Vila Guilherme</a></li>
             </ul>
           </li>
-          <li><a href="#">Peça!</a></li>
+          <li><a href="#">Pedidos</a>
+              <ul>
+                <li><a href="Pedidos.php">Peça! </li>
+                <li><a href="Pedidos_feitos">Pedidos feitos</li>
+              </ul>
+          
+          </li>
           <li><form><input type="text" class="input-class" placeholder="Procure aqui" id="Procurainicial"></form></li>
           <li><button onclick="Procura()">Procurar</button></li>
       
