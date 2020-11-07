@@ -1,5 +1,5 @@
 .menu1 ul li{
-	background-color: black;
+	background-color: rgb(0, 0, 0);
 	float: left;
 	width: 135px;
 	height: 30px;
@@ -72,11 +72,12 @@
 
 .preco_ant {
     text-decoration: line-through;
-    font-size: 15px;
+	font-size: 15px;
+	color: black;
 }
 
 .preco_final {
-    color: red;
+    color: rgb(233, 18, 18);
     font-size: 18px;
     font-weight: bold;
 }
