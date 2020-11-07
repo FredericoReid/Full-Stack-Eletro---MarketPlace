@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Peça!</title>
     
-    <link rel="stylesheet" href="../pedidos.css">
+    <link rel="stylesheet" href="./pedidos.css">
+    <script src="./JavaScript/valida_form.js"></script>
+    
 </head>
 <body>
     <main>
         <div class="card">
-            <form action="./PHP/conexao_pedidos.php" method="POST">
+            <form action="./PHP/conexao_pedidos.php" method="POST" id="formulario_pedido" onsubmit="return valida_form(this)">
                 <h1>Pedidos</h1>
 
-                <input type="nome_cliente" name="nome_cliente" placeholder="Digite o seu Nome completo">
-                <input type="endereco" name="endereco" placeholder="Digite seu endereço para entrega">
-                <input type="telefone" name="telefone" placeholder="Digite seu telefone para contato">
+                <input type="nome_cliente" id="nome" name="nome_cliente" placeholder="Digite o seu Nome completo">
+                <input type="endereco" id="endereco" name="endereco" placeholder="Digite seu endereço para entrega">
+                <input type="telefone" id="telefone" name="telefone" placeholder="Digite seu telefone para contato">
                 <br>
                 
                 <div class = "opcoes_produtos">
@@ -104,12 +106,11 @@
                         <td><?php echo $dado["valor_total"]; ?></td> -->
                     </tr>
                     <?php } ?>
-                </table>
-
-                
+                </table>              
             </form>
         </div>
     </main>
+
 </body>
 </html>
 
