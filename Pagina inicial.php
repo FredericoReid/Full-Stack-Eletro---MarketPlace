@@ -15,7 +15,7 @@
 
       <script src="./JavaScript/script.js" type="text/javascript"></script>
 
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="./CSS/style.css">
 
 
 <!-- ----------------------Menu-------------------------------------------- -->
