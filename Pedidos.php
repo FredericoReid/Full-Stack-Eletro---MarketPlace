@@ -91,9 +91,9 @@
                         <th>Endereço</th>
                         <th>Telefone</th> -->
                         <th>Produto</th><!--
-                        <th>Valor unitário</th>
-                        <th>Quantidade</th>
-                        <th>Valor Total</th>-->
+                        <th>Valor unitário</th>-->
+                        <th>Quantidade</th> <!--
+                        <th>Valor Total</th> -->
                     </tr>
                     <?php while($dado = $consulta2->fetch_array()){ ?>
                     <tr>
@@ -101,8 +101,8 @@
                         <td><?php echo $dado["endereco"]; ?></td> 
                         <td><?php echo $dado["telefone"]; ?></td> -->
                         <td><?php echo $dado["nome_produto"]; ?></td><!--
-                        <td><?php echo $dado["valor_unitario"]; ?></td>
-                        <td><?php echo $dado["quantidade"]; ?></td>
+                        <td><?php echo $dado["valor_unitario"]; ?></td> -->
+                        <td><?php echo $dado["quantidade"]; ?></td> <!--
                         <td><?php echo $dado["valor_total"]; ?></td> -->
                     </tr>
                     <?php } ?>
