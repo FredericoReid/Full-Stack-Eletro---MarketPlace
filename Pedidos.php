@@ -53,7 +53,7 @@ session_start();
 
     <div class="container" id="nav-container">
             <nav class="navbar navbar-expand-lg fixed-top">
-                <a href = "#" class="navbar-brand">
+                <a href = "./index.php" class="navbar-brand">
                     <img src="./imagens/logo.png" alt="logo" alt="Logo Full Stack Eletro"> 
                 </a>
                 <button class="navbaar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" 
