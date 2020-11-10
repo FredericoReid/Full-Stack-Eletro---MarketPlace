@@ -4,6 +4,7 @@ create table pedidos(
 	id int auto_increment,
 	nome_cliente varchar(100),
 	endereco varchar(500),
+	email varchar(200),
 	telefone varchar(80),
 	nome_produto varchar(300),
 	valor_unitario float,
