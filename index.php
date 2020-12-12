@@ -29,6 +29,7 @@
     
 </head>
 <body>
+    
     <!-- Cabeçalho -->
     <header>
         <div class="container" id="nav-container">
@@ -115,7 +116,7 @@
 
     <!-- ------------------------------Produtos----------------------------------------------- -->
     <div class="row col-xs-6 col-sm-6 col-md-6 col-lg-12" align="center">
-               
+            
         <div class="col-lg-3">
             <div class="produtos" id="geladeira">
                 <img src="./imagens/WhatsApp Image 2020-09-24 at 18.08.03 (2).jpeg" width="140px" onmouseover="destaque(this)"
@@ -297,7 +298,7 @@
     </div>
 
     <hr>
- 
+
     <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="col-lg-12" align="center">
         <h5>Formas de pagamento</h5>
@@ -308,7 +309,6 @@
         </div>
 
     </div>
-    
 
 </body>
 </html> 
